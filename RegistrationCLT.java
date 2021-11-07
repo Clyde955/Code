@@ -52,6 +52,9 @@ public class RegistrationCTL extends HttpServlet {
     user.setFirstName(request.getParameter("firstName"));
     user.setLastName(request.getParameter("lastName"));
     user.setLogin(request.getParameter("login"));
+	user.setId(request.getParameter("ID Number"));
+	user.setProvince(request.getParameter("Province"));
+	user.setAddress(request.getParameter("Address"))
     user.setPassword(request.getParameter("password"));
     user.setDob(DataUtility.getDate(request.getParameter("dob")));
     user.setMobileNo(request.getParameter("mobile"));
